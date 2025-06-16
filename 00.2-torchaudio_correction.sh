@@ -1,0 +1,1 @@
+pip install --pre torchaudio==2.7.0+cu128 --index-url https://download.pytorch.org/whl/cu128
