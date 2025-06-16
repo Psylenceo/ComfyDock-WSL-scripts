@@ -1,156 +1,571 @@
-2025-06-07 10:08:05
-
-
-[ComfyUI-Manager] Failed to perform initial fetching 'custom-node-list.json': [Errno 13] Permission denied: '/app/ComfyUI/user/default/ComfyUI-Manager/cache/1514988643_custom-node-list.json'
-2025-06-07 10:08:05
-
-
-Traceback (most recent call last):
-2025-06-07 10:08:05
-
-
-  File "/app/ComfyUI/custom_nodes/comfyui-manager/glob/manager_server.py", line 1735, in get_cache
-2025-06-07 10:08:05
-
-
-    with open(cache_uri, "w", encoding='utf-8') as file:
-2025-06-07 10:08:05
-
-
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2025-06-07 10:08:05
-
-
-PermissionError: [Errno 13] Permission denied: '/app/ComfyUI/user/default/ComfyUI-Manager/cache/1514988643_custom-node-list.json'
-2025-06-07 10:08:05
-
-
-[ComfyUI-Manager] Failed to perform initial fetching 'model-list.json': [Errno 13] Permission denied: '/app/ComfyUI/user/default/ComfyUI-Manager/cache/4245046894_model-list.json'
-2025-06-07 10:08:05
-
-
-Traceback (most recent call last):
-2025-06-07 10:08:05
-
-
-  File "/app/ComfyUI/custom_nodes/comfyui-manager/glob/manager_server.py", line 1735, in get_cache
-2025-06-07 10:08:05
-
-
-    with open(cache_uri, "w", encoding='utf-8') as file:
-2025-06-07 10:08:05
-
-
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2025-06-07 10:08:05
-
-
-PermissionError: [Errno 13] Permission denied: '/app/ComfyUI/user/default/ComfyUI-Manager/cache/4245046894_model-list.json'
-2025-06-07 10:08:08
-
-
-FETCH ComfyRegistry Data: 5/88
-2025-06-07 10:08:12
-
-
-FETCH ComfyRegistry Data: 10/88
-2025-06-07 10:08:16
-
-
-FETCH ComfyRegistry Data: 15/88
-2025-06-07 10:08:19
-
-
-FETCH ComfyRegistry Data: 20/88
-2025-06-07 10:08:23
-
-
-FETCH ComfyRegistry Data: 25/88
-2025-06-07 10:08:27
-
-
-FETCH ComfyRegistry Data: 30/88
-2025-06-07 10:08:28
-
-
-FETCH ComfyRegistry Data: 35/88
-2025-06-07 10:08:31
-
-
-FETCH ComfyRegistry Data: 40/88
-2025-06-07 10:08:35
-
-
-FETCH ComfyRegistry Data: 45/88
-2025-06-07 10:08:39
-
-
-FETCH ComfyRegistry Data: 50/88
-2025-06-07 10:08:42
-
-
-FETCH ComfyRegistry Data: 55/88
-2025-06-07 10:08:46
-
-
-FETCH ComfyRegistry Data: 60/88
-2025-06-07 10:08:50
-
-
-FETCH ComfyRegistry Data: 65/88
-2025-06-07 10:08:53
-
-
-FETCH ComfyRegistry Data: 70/88
-2025-06-07 10:08:55
-
-
-FETCH ComfyRegistry Data: 75/88
-2025-06-07 10:08:58
-
-
-FETCH ComfyRegistry Data: 80/88
-2025-06-07 10:09:02
-
-
-FETCH ComfyRegistry Data: 85/88
-2025-06-07 10:09:05
-
-
-FETCH ComfyRegistry Data [DONE]
-2025-06-07 10:09:05
-
-
-Cannot connect to comfyregistry.
-2025-06-07 10:09:05
-
-
-FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json⁠ [DONE]
-2025-06-07 10:09:05
-
-
-[ComfyUI-Manager] Due to a network error, switching to local mode.
-2025-06-07 10:09:05
-
-
-=> custom-node-list.json
-2025-06-07 10:09:05
-
-
-=> [Errno 13] Permission denied: 
-2025-06-07 10:09:05
-
-
-'/app/ComfyUI/user/default/ComfyUI-Manager/cache/1514988643_custom-node-list.jso
-2025-06-07 10:09:05
-
-
-n'
-2025-06-07 10:09:05
-
-
-FETCH DATA from: /app/ComfyUI/custom_nodes/comfyui-manager/custom-node-list.json [DONE]
-2025-06-07 10:09:05
-
-
-[ComfyUI-Manager] All startup tasks have been completed.
+2025-06-07 10:07:54.278 | >> Switching to user 'comfy'
+2025-06-07 10:07:55.163 | [START] Security scan
+2025-06-07 10:07:55.163 | [DONE] Security scan
+2025-06-07 10:07:55.163 | ## ComfyUI-Manager: installing dependencies done.
+2025-06-07 10:07:55.163 | ** ComfyUI startup time: 2025-06-07 14:07:55.163
+2025-06-07 10:07:55.163 | ** Platform: Linux
+2025-06-07 10:07:55.163 | ** Python version: 3.12.11 (main, Jun  4 2025, 17:36:43) [Clang 20.1.4 ]
+2025-06-07 10:07:55.163 | ** Python executable: /app/.venv/bin/python
+2025-06-07 10:07:55.163 | ** ComfyUI Path: /app/ComfyUI
+2025-06-07 10:07:55.163 | ** ComfyUI Base Folder Path: /app/ComfyUI
+2025-06-07 10:07:55.163 | ** User directory: /app/ComfyUI/user
+2025-06-07 10:07:55.164 | ** ComfyUI-Manager config path: /app/ComfyUI/user/default/ComfyUI-Manager/config.ini
+2025-06-07 10:07:55.164 | ** Log path: /app/ComfyUI/user/comfyui.log
+2025-06-07 10:07:55.620 | 
+2025-06-07 10:07:55.620 | Prestartup times for custom nodes:
+2025-06-07 10:07:55.620 |    0.0 seconds: /app/ComfyUI/custom_nodes/comfyui-easy-use
+2025-06-07 10:07:55.620 |    0.0 seconds: /app/ComfyUI/custom_nodes/rgthree-comfy
+2025-06-07 10:07:55.620 |    1.2 seconds: /app/ComfyUI/custom_nodes/comfyui-manager
+2025-06-07 10:07:55.620 | 
+2025-06-07 10:07:57.262 | Checkpoint files will always be loaded safely.
+2025-06-07 10:07:57.675 | Total VRAM 24564 MB, total RAM 31899 MB
+2025-06-07 10:07:57.675 | pytorch version: 2.7.0+cu128
+2025-06-07 10:07:59.773 | Traceback (most recent call last):
+2025-06-07 10:07:59.773 |   File "/app/ComfyUI/nodes.py", line 2124, in load_custom_node
+2025-06-07 10:07:59.773 |     module_spec.loader.exec_module(module)
+2025-06-07 10:07:59.773 |   File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+2025-06-07 10:07:59.773 |   File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+2025-06-07 10:07:59.773 |   File "/app/ComfyUI/comfy_extras/nodes_audio.py", line 4, in <module>
+2025-06-07 10:07:59.773 |     import torchaudio
+2025-06-07 10:07:59.773 |   File "/app/.venv/lib/python3.12/site-packages/torchaudio/__init__.py", line 2, in <module>
+2025-06-07 10:07:59.773 |     from . import _extension  # noqa  # usort: skip
+2025-06-07 10:07:59.773 |     ^^^^^^^^^^^^^^^^^^^^^^^^
+2025-06-07 10:07:59.773 |   File "/app/.venv/lib/python3.12/site-packages/torchaudio/_extension/__init__.py", line 42, in <module>
+2025-06-07 10:07:59.773 |     _check_cuda_version()
+2025-06-07 10:07:59.773 |   File "/app/.venv/lib/python3.12/site-packages/torchaudio/_extension/utils.py", line 168, in _check_cuda_version
+2025-06-07 10:07:59.773 |     version = torchaudio.lib._torchaudio.cuda_version()
+2025-06-07 10:07:59.773 |               ^^^^^^^^^^^^^^
+2025-06-07 10:07:59.773 | AttributeError: partially initialized module 'torchaudio' has no attribute 'lib' (most likely due to a circular import)
+2025-06-07 10:07:59.773 | 
+2025-06-07 10:07:59.773 | Cannot import /app/ComfyUI/comfy_extras/nodes_audio.py module for custom nodes: partially initialized module 'torchaudio' has no attribute 'lib' (most likely due to a circular import)
+2025-06-07 10:07:59.779 | xformers version: 0.0.30
+2025-06-07 10:07:59.779 | Set vram state to: NORMAL_VRAM
+2025-06-07 10:07:59.779 | Device: cuda:0 NVIDIA GeForce RTX 4090 : cudaMallocAsync
+2025-06-07 10:08:00.123 | OpenCV not installed
+2025-06-07 10:08:00.127 | Traceback (most recent call last):
+2025-06-07 10:08:00.127 |   File "/app/ComfyUI/nodes.py", line 2124, in load_custom_node
+2025-06-07 10:08:00.127 |     module_spec.loader.exec_module(module)
+2025-06-07 10:08:00.127 |   File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+2025-06-07 10:08:00.127 |   File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+2025-06-07 10:08:00.127 |   File "/app/ComfyUI/custom_nodes/comfyui-kjnodes/__init__.py", line 7, in <module>
+2025-06-07 10:08:00.127 |     from .nodes.mask_nodes import *
+2025-06-07 10:08:00.127 |   File "/app/ComfyUI/custom_nodes/comfyui-kjnodes/nodes/mask_nodes.py", line 1296, in <module>
+2025-06-07 10:08:00.127 |     import cv2
+2025-06-07 10:08:00.127 | ModuleNotFoundError: No module named 'cv2'
+2025-06-07 10:08:00.127 | 
+2025-06-07 10:08:00.127 | Cannot import /app/ComfyUI/custom_nodes/comfyui-kjnodes module for custom nodes: No module named 'cv2'
+2025-06-07 10:08:00.130 | Traceback (most recent call last):
+2025-06-07 10:08:00.130 |   File "/app/ComfyUI/nodes.py", line 2124, in load_custom_node
+2025-06-07 10:08:00.130 |     module_spec.loader.exec_module(module)
+2025-06-07 10:08:00.130 |   File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+2025-06-07 10:08:00.130 |   File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+2025-06-07 10:08:00.130 |   File "/app/ComfyUI/custom_nodes/ComfyUI-FramePackWrapper/__init__.py", line 1, in <module>
+2025-06-07 10:08:00.130 |     from .nodes import NODE_CLASS_MAPPINGS, NODE_DISPLAY_NAME_MAPPINGS
+2025-06-07 10:08:00.130 |   File "/app/ComfyUI/custom_nodes/ComfyUI-FramePackWrapper/nodes.py", line 9, in <module>
+2025-06-07 10:08:00.130 |     from accelerate import init_empty_weights
+2025-06-07 10:08:00.130 | ModuleNotFoundError: No module named 'accelerate'
+2025-06-07 10:08:00.130 | 
+2025-06-07 10:08:00.130 | Cannot import /app/ComfyUI/custom_nodes/ComfyUI-FramePackWrapper module for custom nodes: No module named 'accelerate'
+2025-06-07 10:08:00.161 | Using sage attention
+2025-06-07 10:08:00.183 | torchaudio missing, ACE model will be broken
+2025-06-07 10:08:00.185 | torchaudio missing, ACE model will be broken
+2025-06-07 10:08:00.255 | Traceback (most recent call last):
+2025-06-07 10:08:00.255 |   File "/app/ComfyUI/nodes.py", line 2124, in load_custom_node
+2025-06-07 10:08:00.255 |     module_spec.loader.exec_module(module)
+2025-06-07 10:08:00.255 |   File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+2025-06-07 10:08:00.255 |   File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+2025-06-07 10:08:00.255 |   File "/app/ComfyUI/custom_nodes/llm_polymath/__init__.py", line 1, in <module>
+2025-06-07 10:08:00.255 |     from .polymath import PolymathSettings, Polymath, MediaScraper
+2025-06-07 10:08:00.255 |   File "/app/ComfyUI/custom_nodes/llm_polymath/polymath.py", line 12, in <module>
+2025-06-07 10:08:00.255 |     from googlesearch import search
+2025-06-07 10:08:00.255 | ModuleNotFoundError: No module named 'googlesearch'
+2025-06-07 10:08:00.255 | 
+2025-06-07 10:08:00.256 | Cannot import /app/ComfyUI/custom_nodes/llm_polymath module for custom nodes: No module named 'googlesearch'
+2025-06-07 10:08:00.339 | 3D OpenPose Editor: Loaded
+2025-06-07 10:08:00.352 | Traceback (most recent call last):
+2025-06-07 10:08:00.352 |   File "/app/ComfyUI/nodes.py", line 2124, in load_custom_node
+2025-06-07 10:08:00.352 |     module_spec.loader.exec_module(module)
+2025-06-07 10:08:00.352 |   File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+2025-06-07 10:08:00.352 |   File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+2025-06-07 10:08:00.352 |   File "/app/ComfyUI/custom_nodes/comfyui-sam2/__init__.py", line 1, in <module>
+2025-06-07 10:08:00.352 |     from .node import SAM2ModelLoader, GroundingDinoModelLoader, GroundingDinoSAM2Segment, InvertMask, IsMaskEmptyNode
+2025-06-07 10:08:00.352 |   File "/app/ComfyUI/custom_nodes/comfyui-sam2/node.py", line 15, in <module>
+2025-06-07 10:08:00.352 |     from sam2.build_sam import build_sam2
+2025-06-07 10:08:00.352 |   File "/app/ComfyUI/custom_nodes/comfyui-sam2/sam2/__init__.py", line 7, in <module>
+2025-06-07 10:08:00.352 |     from hydra import initialize_config_module
+2025-06-07 10:08:00.352 | ModuleNotFoundError: No module named 'hydra'
+2025-06-07 10:08:00.352 | 
+2025-06-07 10:08:00.352 | Cannot import /app/ComfyUI/custom_nodes/comfyui-sam2 module for custom nodes: No module named 'hydra'
+2025-06-07 10:08:00.354 | Traceback (most recent call last):
+2025-06-07 10:08:00.354 |   File "/app/ComfyUI/nodes.py", line 2124, in load_custom_node
+2025-06-07 10:08:00.354 |     module_spec.loader.exec_module(module)
+2025-06-07 10:08:00.354 |   File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+2025-06-07 10:08:00.354 |   File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+2025-06-07 10:08:00.354 |   File "/app/ComfyUI/custom_nodes/comfyui_segment_anything/__init__.py", line 1, in <module>
+2025-06-07 10:08:00.354 |     from .node import *
+2025-06-07 10:08:00.354 |   File "/app/ComfyUI/custom_nodes/comfyui_segment_anything/node.py", line 16, in <module>
+2025-06-07 10:08:00.354 |     from sam_hq.predictor import SamPredictorHQ
+2025-06-07 10:08:00.354 |   File "/app/ComfyUI/custom_nodes/comfyui_segment_anything/sam_hq/predictor.py", line 4, in <module>
+2025-06-07 10:08:00.354 |     from segment_anything import SamPredictor
+2025-06-07 10:08:00.354 | ModuleNotFoundError: No module named 'segment_anything'
+2025-06-07 10:08:00.354 | 
+2025-06-07 10:08:00.354 | Cannot import /app/ComfyUI/custom_nodes/comfyui_segment_anything module for custom nodes: No module named 'segment_anything'
+2025-06-07 10:08:00.358 | ComfyUI-FreeMemory nodes loaded: Image, Latent, Model, CLIP, and String versions available.
+2025-06-07 10:08:00.362 | Traceback (most recent call last):
+2025-06-07 10:08:00.362 |   File "/app/ComfyUI/nodes.py", line 2124, in load_custom_node
+2025-06-07 10:08:00.362 |     module_spec.loader.exec_module(module)
+2025-06-07 10:08:00.362 |   File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+2025-06-07 10:08:00.362 |   File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+2025-06-07 10:08:00.362 |   File "/app/ComfyUI/custom_nodes/comfyui-hunyan3dwrapper/__init__.py", line 1, in <module>
+2025-06-07 10:08:00.362 |     from .nodes import NODE_CLASS_MAPPINGS, NODE_DISPLAY_NAME_MAPPINGS
+2025-06-07 10:08:00.362 |   File "/app/ComfyUI/custom_nodes/comfyui-hunyan3dwrapper/nodes.py", line 9, in <module>
+2025-06-07 10:08:00.362 |     import trimesh as Trimesh
+2025-06-07 10:08:00.362 | ModuleNotFoundError: No module named 'trimesh'
+2025-06-07 10:08:00.362 | 
+2025-06-07 10:08:00.362 | Cannot import /app/ComfyUI/custom_nodes/comfyui-hunyan3dwrapper module for custom nodes: No module named 'trimesh'
+2025-06-07 10:08:00.376 | Total VRAM 24564 MB, total RAM 31899 MB
+2025-06-07 10:08:00.376 | pytorch version: 2.7.0+cu128
+2025-06-07 10:08:00.376 | xformers version: 0.0.30
+2025-06-07 10:08:00.377 | Set vram state to: NORMAL_VRAM
+2025-06-07 10:08:00.377 | Device: cuda:0 NVIDIA GeForce RTX 4090 : cudaMallocAsync
+2025-06-07 10:08:00.381 | [VideoHelperSuite] - WARNING - Failed to import imageio_ffmpeg
+2025-06-07 10:08:00.411 | [camera-comfyUI] open3d is not installed. Point cloud visualization features will be unavailable. Error: No module named 'open3d'
+2025-06-07 10:08:00.505 | [OutpaintAnyProjection] could not import FluxNF4Inpainting: No module named 'custom_nodes.inpainting_flux'
+2025-06-07 10:08:00.674 | [tinyterraNodes] Loaded
+2025-06-07 10:08:00.675 | Traceback (most recent call last):
+2025-06-07 10:08:00.675 |   File "/app/ComfyUI/nodes.py", line 2124, in load_custom_node
+2025-06-07 10:08:00.675 |     module_spec.loader.exec_module(module)
+2025-06-07 10:08:00.675 |   File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+2025-06-07 10:08:00.675 |   File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+2025-06-07 10:08:00.675 |   File "/app/ComfyUI/custom_nodes/comfyui_tinyterranodes/__init__.py", line 110, in <module>
+2025-06-07 10:08:00.675 |     update_config()
+2025-06-07 10:08:00.675 |   File "/app/ComfyUI/custom_nodes/comfyui_tinyterranodes/__init__.py", line 34, in update_config
+2025-06-07 10:08:00.675 |     config_write("Versions", node, version)
+2025-06-07 10:08:00.675 |   File "/app/ComfyUI/custom_nodes/comfyui_tinyterranodes/__init__.py", line 85, in config_write
+2025-06-07 10:08:00.675 |     with open(config_path, 'w') as f:
+2025-06-07 10:08:00.675 |          ^^^^^^^^^^^^^^^^^^^^^^
+2025-06-07 10:08:00.675 | PermissionError: [Errno 13] Permission denied: '/app/ComfyUI/custom_nodes/comfyui_tinyterranodes/config.ini'
+2025-06-07 10:08:00.675 | 
+2025-06-07 10:08:00.675 | Cannot import /app/ComfyUI/custom_nodes/comfyui_tinyterranodes module for custom nodes: [Errno 13] Permission denied: '/app/ComfyUI/custom_nodes/comfyui_tinyterranodes/config.ini'
+2025-06-07 10:08:00.693 | Traceback (most recent call last):
+2025-06-07 10:08:00.693 |   File "/app/ComfyUI/nodes.py", line 2124, in load_custom_node
+2025-06-07 10:08:00.693 |     module_spec.loader.exec_module(module)
+2025-06-07 10:08:00.693 |   File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+2025-06-07 10:08:00.693 |   File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+2025-06-07 10:08:00.693 |   File "/app/ComfyUI/custom_nodes/ComfyUI-LTXVideo/__init__.py", line 6, in <module>
+2025-06-07 10:08:00.693 |     from .latent_upsampler import LTXVLatentUpsampler
+2025-06-07 10:08:00.693 |   File "/app/ComfyUI/custom_nodes/ComfyUI-LTXVideo/latent_upsampler.py", line 7, in <module>
+2025-06-07 10:08:00.693 |     from diffusers import ConfigMixin, ModelMixin
+2025-06-07 10:08:00.693 | ModuleNotFoundError: No module named 'diffusers'
+2025-06-07 10:08:00.693 | 
+2025-06-07 10:08:00.694 | Cannot import /app/ComfyUI/custom_nodes/ComfyUI-LTXVideo module for custom nodes: No module named 'diffusers'
+2025-06-07 10:08:00.703 | Traceback (most recent call last):
+2025-06-07 10:08:00.703 |   File "/app/ComfyUI/nodes.py", line 2124, in load_custom_node
+2025-06-07 10:08:00.703 |     module_spec.loader.exec_module(module)
+2025-06-07 10:08:00.703 |   File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+2025-06-07 10:08:00.703 |   File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+2025-06-07 10:08:00.703 |   File "/app/ComfyUI/custom_nodes/ComfyUI-WanVideoWrapper/__init__.py", line 1, in <module>
+2025-06-07 10:08:00.703 |     from .nodes import NODE_CLASS_MAPPINGS, NODE_DISPLAY_NAME_MAPPINGS
+2025-06-07 10:08:00.703 |   File "/app/ComfyUI/custom_nodes/ComfyUI-WanVideoWrapper/nodes.py", line 5, in <module>
+2025-06-07 10:08:00.703 |     from .utils import log, print_memory, apply_lora, clip_encode_image_tiled
+2025-06-07 10:08:00.703 |   File "/app/ComfyUI/custom_nodes/ComfyUI-WanVideoWrapper/utils.py", line 8, in <module>
+2025-06-07 10:08:00.703 |     from accelerate.utils import set_module_tensor_to_device
+2025-06-07 10:08:00.703 | ModuleNotFoundError: No module named 'accelerate'
+2025-06-07 10:08:00.703 | 
+2025-06-07 10:08:00.703 | Cannot import /app/ComfyUI/custom_nodes/ComfyUI-WanVideoWrapper module for custom nodes: No module named 'accelerate'
+2025-06-07 10:08:00.706 | Traceback (most recent call last):
+2025-06-07 10:08:00.706 |   File "/app/ComfyUI/nodes.py", line 2124, in load_custom_node
+2025-06-07 10:08:00.706 |     module_spec.loader.exec_module(module)
+2025-06-07 10:08:00.706 |   File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+2025-06-07 10:08:00.706 |   File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+2025-06-07 10:08:00.706 |   File "/app/ComfyUI/custom_nodes/comfyui-brushnet/__init__.py", line 1, in <module>
+2025-06-07 10:08:00.706 |     from .brushnet_nodes import BrushNetLoader, BrushNet, BlendInpaint, PowerPaintCLIPLoader, PowerPaint, CutForInpaint
+2025-06-07 10:08:00.706 |   File "/app/ComfyUI/custom_nodes/comfyui-brushnet/brushnet_nodes.py", line 8, in <module>
+2025-06-07 10:08:00.706 |     from accelerate import init_empty_weights, load_checkpoint_and_dispatch
+2025-06-07 10:08:00.706 | ModuleNotFoundError: No module named 'accelerate'
+2025-06-07 10:08:00.706 | 
+2025-06-07 10:08:00.706 | Cannot import /app/ComfyUI/custom_nodes/comfyui-brushnet module for custom nodes: No module named 'accelerate'
+2025-06-07 10:08:02.002 | Python version: 3.12.11 (main, Jun  4 2025, 17:36:43) [Clang 20.1.4 ]
+2025-06-07 10:08:02.002 | ComfyUI version: 0.3.40
+2025-06-07 10:08:02.003 | ComfyUI frontend version: 1.21.7
+2025-06-07 10:08:02.004 | [Prompt Server] web root: /app/.venv/lib/python3.12/site-packages/comfyui_frontend_package/static
+2025-06-07 10:08:02.821 | Package diffusers installed successfully
+2025-06-07 10:08:02.848 | install lark...
+2025-06-07 10:08:03.786 | Package lark installed successfully
+2025-06-07 10:08:03.816 | Module 'diffusers' load failed. If you don't have it installed, do it:
+2025-06-07 10:08:03.816 | pip install diffusers
+2025-06-07 10:08:03.890 | [ComfyUI-Easy-Use] server: v1.3.0 Loaded
+2025-06-07 10:08:03.890 | [ComfyUI-Easy-Use] web root: /app/ComfyUI/custom_nodes/comfyui-easy-use/web_version/v2 Loaded
+2025-06-07 10:08:03.893 | Traceback (most recent call last):
+2025-06-07 10:08:03.893 |   File "/app/ComfyUI/nodes.py", line 2124, in load_custom_node
+2025-06-07 10:08:03.893 |     module_spec.loader.exec_module(module)
+2025-06-07 10:08:03.893 |   File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+2025-06-07 10:08:03.893 |   File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+2025-06-07 10:08:03.893 |   File "/app/ComfyUI/custom_nodes/ComfyUI-nunchaku/__init__.py", line 2, in <module>
+2025-06-07 10:08:03.893 |     from .nodes.lora import NunchakuFluxLoraLoader
+2025-06-07 10:08:03.893 |   File "/app/ComfyUI/custom_nodes/ComfyUI-nunchaku/nodes/lora/__init__.py", line 1, in <module>
+2025-06-07 10:08:03.893 |     from .flux import NunchakuFluxLoraLoader
+2025-06-07 10:08:03.893 |   File "/app/ComfyUI/custom_nodes/ComfyUI-nunchaku/nodes/lora/flux.py", line 5, in <module>
+2025-06-07 10:08:03.893 |     from nunchaku.lora.flux import to_diffusers
+2025-06-07 10:08:03.893 | ModuleNotFoundError: No module named 'nunchaku'
+2025-06-07 10:08:03.893 | 
+2025-06-07 10:08:03.893 | Cannot import /app/ComfyUI/custom_nodes/ComfyUI-nunchaku module for custom nodes: No module named 'nunchaku'
+2025-06-07 10:08:03.894 | Error loading AILab_Segment.py: No module named 'segment_anything'
+2025-06-07 10:08:03.898 | Error loading AILab_SegmentV2.py: No module named 'segment_anything'
+2025-06-07 10:08:03.899 | Error loading AILab_BodySegment.py: No module named 'onnxruntime'
+2025-06-07 10:08:03.901 | [ComfyUI-RMBG] v2.4.0 | 21 nodes Loaded
+2025-06-07 10:08:03.902 | ### Loading: ComfyUI-Impact-Subpack (V1.3.2)
+2025-06-07 10:08:03.904 | [Impact Pack/Subpack] Using folder_paths to determine whitelist path: /app/ComfyUI/user/default/ComfyUI-Impact-Subpack/model-whitelist.txt
+2025-06-07 10:08:03.904 | [Impact Pack/Subpack] Ensured whitelist directory exists: /app/ComfyUI/user/default/ComfyUI-Impact-Subpack
+2025-06-07 10:08:03.904 | [Impact Pack/Subpack] Loaded 0 model(s) from whitelist: /app/ComfyUI/user/default/ComfyUI-Impact-Subpack/model-whitelist.txt
+2025-06-07 10:08:03.904 | No module named 'ultralytics'
+2025-06-07 10:08:03.904 | 
+2025-06-07 10:08:03.904 | !!!!!
+2025-06-07 10:08:03.904 | 
+2025-06-07 10:08:03.904 | [ComfyUI-Impact-Subpack] If this error occurs, please check the following link:
+2025-06-07 10:08:03.904 | 	https://github.com/ltdrdata/ComfyUI-Impact-Pack/blob/Main/troubleshooting/TROUBLESHOOTING.md
+2025-06-07 10:08:03.904 | 
+2025-06-07 10:08:03.904 | !!!!!
+2025-06-07 10:08:03.904 | 
+2025-06-07 10:08:03.907 | Traceback (most recent call last):
+2025-06-07 10:08:03.907 |   File "/app/ComfyUI/nodes.py", line 2124, in load_custom_node
+2025-06-07 10:08:03.907 |     module_spec.loader.exec_module(module)
+2025-06-07 10:08:03.907 |   File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+2025-06-07 10:08:03.907 |   File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+2025-06-07 10:08:03.907 |   File "/app/ComfyUI/custom_nodes/comfyui-impact-subpack/__init__.py", line 23, in <module>
+2025-06-07 10:08:03.907 |     imported_module = importlib.import_module(".modules.{}".format(module_name), __name__)
+2025-06-07 10:08:03.907 |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-06-07 10:08:03.907 |   File "/home/comfy/.local/share/uv/python/cpython-3.12.11-linux-x86_64-gnu/lib/python3.12/importlib/__init__.py", line 90, in import_module
+2025-06-07 10:08:03.907 |     return _bootstrap._gcd_import(name[level:], package, level)
+2025-06-07 10:08:03.907 |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-06-07 10:08:03.907 |   File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+2025-06-07 10:08:03.907 |   File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+2025-06-07 10:08:03.907 |   File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+2025-06-07 10:08:03.907 |   File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+2025-06-07 10:08:03.907 |   File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+2025-06-07 10:08:03.907 |   File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+2025-06-07 10:08:03.907 |   File "/app/ComfyUI/custom_nodes/comfyui-impact-subpack/modules/subpack_nodes.py", line 3, in <module>
+2025-06-07 10:08:03.907 |     from . import subcore
+2025-06-07 10:08:03.907 |   File "/app/ComfyUI/custom_nodes/comfyui-impact-subpack/modules/subcore.py", line 232, in <module>
+2025-06-07 10:08:03.907 |     raise e
+2025-06-07 10:08:03.907 |   File "/app/ComfyUI/custom_nodes/comfyui-impact-subpack/modules/subcore.py", line 150, in <module>
+2025-06-07 10:08:03.907 |     from ultralytics import YOLO
+2025-06-07 10:08:03.907 | ModuleNotFoundError: No module named 'ultralytics'
+2025-06-07 10:08:03.907 | 
+2025-06-07 10:08:03.907 | Cannot import /app/ComfyUI/custom_nodes/comfyui-impact-subpack module for custom nodes: No module named 'ultralytics'
+2025-06-07 10:08:04.158 | generated new fontManager
+2025-06-07 10:08:04.298 | Traceback (most recent call last):
+2025-06-07 10:08:04.298 |   File "/app/ComfyUI/nodes.py", line 2124, in load_custom_node
+2025-06-07 10:08:04.298 |     module_spec.loader.exec_module(module)
+2025-06-07 10:08:04.298 |   File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+2025-06-07 10:08:04.298 |   File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+2025-06-07 10:08:04.298 |   File "/app/ComfyUI/custom_nodes/comfyui-mvadapter/__init__.py", line 1, in <module>
+2025-06-07 10:08:04.298 |     from .nodes import *
+2025-06-07 10:08:04.298 |   File "/app/ComfyUI/custom_nodes/comfyui-mvadapter/nodes.py", line 7, in <module>
+2025-06-07 10:08:04.298 |     from .utils import (
+2025-06-07 10:08:04.298 |   File "/app/ComfyUI/custom_nodes/comfyui-mvadapter/utils.py", line 9, in <module>
+2025-06-07 10:08:04.298 |     from omegaconf import OmegaConf
+2025-06-07 10:08:04.298 | ModuleNotFoundError: No module named 'omegaconf'
+2025-06-07 10:08:04.298 | 
+2025-06-07 10:08:04.298 | Cannot import /app/ComfyUI/custom_nodes/comfyui-mvadapter module for custom nodes: No module named 'omegaconf'
+2025-06-07 10:08:04.303 | [/app/ComfyUI/custom_nodes/comfyui_controlnet_aux] | INFO -> Using ckpts path: /app/ComfyUI/custom_nodes/comfyui_controlnet_aux/ckpts
+2025-06-07 10:08:04.303 | [/app/ComfyUI/custom_nodes/comfyui_controlnet_aux] | INFO -> Using symlinks: False
+2025-06-07 10:08:04.303 | [/app/ComfyUI/custom_nodes/comfyui_controlnet_aux] | INFO -> Using ort providers: ['CUDAExecutionProvider', 'DirectMLExecutionProvider', 'OpenVINOExecutionProvider', 'ROCMExecutionProvider', 'CPUExecutionProvider', 'CoreMLExecutionProvider']
+2025-06-07 10:08:04.323 | 
+2025-06-07 10:08:04.323 | 
+2025-06-07 10:08:04.323 | Full error log from comfyui_controlnet_aux: 
+2025-06-07 10:08:04.323 | Traceback (most recent call last):
+2025-06-07 10:08:04.323 |   File "/app/ComfyUI/custom_nodes/comfyui_controlnet_aux/__init__.py", line 30, in load_nodes
+2025-06-07 10:08:04.323 |     module = importlib.import_module(
+2025-06-07 10:08:04.323 |              ^^^^^^^^^^^^^^^^^^^^^^^^
+2025-06-07 10:08:04.323 |   File "/home/comfy/.local/share/uv/python/cpython-3.12.11-linux-x86_64-gnu/lib/python3.12/importlib/__init__.py", line 90, in import_module
+2025-06-07 10:08:04.323 |     return _bootstrap._gcd_import(name[level:], package, level)
+2025-06-07 10:08:04.323 |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-06-07 10:08:04.323 |   File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+2025-06-07 10:08:04.323 |   File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+2025-06-07 10:08:04.323 |   File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+2025-06-07 10:08:04.323 |   File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+2025-06-07 10:08:04.323 |   File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+2025-06-07 10:08:04.323 |   File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+2025-06-07 10:08:04.323 |   File "/app/ComfyUI/custom_nodes/comfyui_controlnet_aux/node_wrappers/pose_keypoint_postprocess.py", line 11, in <module>
+2025-06-07 10:08:04.323 |     from ..src.custom_controlnet_aux.dwpose import draw_poses, draw_animalposes, decode_json_as_poses
+2025-06-07 10:08:04.323 |   File "/app/ComfyUI/custom_nodes/comfyui_controlnet_aux/src/custom_controlnet_aux/dwpose/__init__.py", line 17, in <module>
+2025-06-07 10:08:04.323 |     from .hand import Hand
+2025-06-07 10:08:04.323 |   File "/app/ComfyUI/custom_nodes/comfyui_controlnet_aux/src/custom_controlnet_aux/dwpose/hand.py", line 10, in <module>
+2025-06-07 10:08:04.323 |     from skimage.measure import label
+2025-06-07 10:08:04.323 | ModuleNotFoundError: No module named 'skimage'
+2025-06-07 10:08:04.323 | 
+2025-06-07 10:08:04.323 | 
+2025-06-07 10:08:04.323 | Traceback (most recent call last):
+2025-06-07 10:08:04.323 |   File "/app/ComfyUI/custom_nodes/comfyui_controlnet_aux/__init__.py", line 30, in load_nodes
+2025-06-07 10:08:04.323 |     module = importlib.import_module(
+2025-06-07 10:08:04.323 |              ^^^^^^^^^^^^^^^^^^^^^^^^
+2025-06-07 10:08:04.323 |   File "/home/comfy/.local/share/uv/python/cpython-3.12.11-linux-x86_64-gnu/lib/python3.12/importlib/__init__.py", line 90, in import_module
+2025-06-07 10:08:04.323 |     return _bootstrap._gcd_import(name[level:], package, level)
+2025-06-07 10:08:04.323 |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-06-07 10:08:04.323 | [/app/ComfyUI/custom_nodes/comfyui_controlnet_aux] | INFO -> Some nodes failed to load:
+2025-06-07 10:08:04.323 | 	Failed to import module pose_keypoint_postprocess because ModuleNotFoundError: No module named 'skimage'
+2025-06-07 10:08:04.323 | 	Failed to import module dwpose because ModuleNotFoundError: No module named 'skimage'
+2025-06-07 10:08:04.323 | 
+2025-06-07 10:08:04.323 | Check that you properly installed the dependencies.
+2025-06-07 10:08:04.323 | If you think this is a bug, please report it on the github page (https://github.com/Fannovel16/comfyui_controlnet_aux/issues)
+2025-06-07 10:08:04.323 |   File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+2025-06-07 10:08:04.323 |   File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+2025-06-07 10:08:04.323 |   File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+2025-06-07 10:08:04.323 |   File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+2025-06-07 10:08:04.323 |   File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+2025-06-07 10:08:04.323 |   File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+2025-06-07 10:08:04.323 |   File "/app/ComfyUI/custom_nodes/comfyui_controlnet_aux/node_wrappers/dwpose.py", line 5, in <module>
+2025-06-07 10:08:04.323 |     from custom_controlnet_aux.dwpose import DwposeDetector, AnimalposeDetector
+2025-06-07 10:08:04.323 |   File "/app/ComfyUI/custom_nodes/comfyui_controlnet_aux/src/custom_controlnet_aux/dwpose/__init__.py", line 17, in <module>
+2025-06-07 10:08:04.323 |     from .hand import Hand
+2025-06-07 10:08:04.323 |   File "/app/ComfyUI/custom_nodes/comfyui_controlnet_aux/src/custom_controlnet_aux/dwpose/hand.py", line 10, in <module>
+2025-06-07 10:08:04.323 |     from skimage.measure import label
+2025-06-07 10:08:04.323 | ModuleNotFoundError: No module named 'skimage'
+2025-06-07 10:08:04.323 | 
+2025-06-07 10:08:04.323 | 
+2025-06-07 10:08:04.323 | 
+2025-06-07 10:08:04.592 | 
+2025-06-07 10:08:04.592 | [rgthree-comfy] Loaded 47 exciting nodes. 🎉
+2025-06-07 10:08:04.592 | 
+2025-06-07 10:08:04.602 | Traceback (most recent call last):
+2025-06-07 10:08:04.602 |   File "/app/ComfyUI/nodes.py", line 2124, in load_custom_node
+2025-06-07 10:08:04.602 |     module_spec.loader.exec_module(module)
+2025-06-07 10:08:04.602 |   File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+2025-06-07 10:08:04.602 |   File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+2025-06-07 10:08:04.602 |   File "/app/ComfyUI/custom_nodes/comfyui-hunyuanvideowrapper/__init__.py", line 1, in <module>
+2025-06-07 10:08:04.602 |     from .nodes import NODE_CLASS_MAPPINGS as NODES_CLASS, NODE_DISPLAY_NAME_MAPPINGS as NODES_DISPLAY
+2025-06-07 10:08:04.602 |   File "/app/ComfyUI/custom_nodes/comfyui-hunyuanvideowrapper/nodes.py", line 6, in <module>
+2025-06-07 10:08:04.602 |     from diffusers.video_processor import VideoProcessor
+2025-06-07 10:08:04.602 |   File "/app/.venv/lib/python3.12/site-packages/diffusers/__init__.py", line 5, in <module>
+2025-06-07 10:08:04.602 |     from .utils import (
+2025-06-07 10:08:04.602 |   File "/app/.venv/lib/python3.12/site-packages/diffusers/utils/__init__.py", line 38, in <module>
+2025-06-07 10:08:04.602 |     from .dynamic_modules_utils import get_class_from_dynamic_module
+2025-06-07 10:08:04.602 |   File "/app/.venv/lib/python3.12/site-packages/diffusers/utils/dynamic_modules_utils.py", line 28, in <module>
+2025-06-07 10:08:04.602 |     from huggingface_hub import cached_download, hf_hub_download, model_info
+2025-06-07 10:08:04.602 | ImportError: cannot import name 'cached_download' from 'huggingface_hub' (/app/.venv/lib/python3.12/site-packages/huggingface_hub/__init__.py). Did you mean: 'hf_hub_download'?
+2025-06-07 10:08:04.602 | 
+2025-06-07 10:08:04.602 | Cannot import /app/ComfyUI/custom_nodes/comfyui-hunyuanvideowrapper module for custom nodes: cannot import name 'cached_download' from 'huggingface_hub' (/app/.venv/lib/python3.12/site-packages/huggingface_hub/__init__.py)
+2025-06-07 10:08:04.611 | Traceback (most recent call last):
+2025-06-07 10:08:04.611 |   File "/app/ComfyUI/custom_nodes/comfyui_birefnet_ll/birefnet/models/backbones/pvt_v2.py", line 8, in <module>
+2025-06-07 10:08:04.611 |     from timm.layers import DropPath, to_2tuple, trunc_normal_
+2025-06-07 10:08:04.611 | ModuleNotFoundError: No module named 'timm'
+2025-06-07 10:08:04.611 | 
+2025-06-07 10:08:04.611 | During handling of the above exception, another exception occurred:
+2025-06-07 10:08:04.611 | 
+2025-06-07 10:08:04.611 | Traceback (most recent call last):
+2025-06-07 10:08:04.611 |   File "/app/ComfyUI/nodes.py", line 2124, in load_custom_node
+2025-06-07 10:08:04.611 |     module_spec.loader.exec_module(module)
+2025-06-07 10:08:04.611 |   File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+2025-06-07 10:08:04.611 |   File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+2025-06-07 10:08:04.611 |   File "/app/ComfyUI/custom_nodes/comfyui_birefnet_ll/__init__.py", line 22, in <module>
+2025-06-07 10:08:04.611 |     from . import birefnetNode
+2025-06-07 10:08:04.611 |   File "/app/ComfyUI/custom_nodes/comfyui_birefnet_ll/birefnetNode.py", line 9, in <module>
+2025-06-07 10:08:04.611 |     from birefnet.models.birefnet import BiRefNet
+2025-06-07 10:08:04.611 |   File "/app/ComfyUI/custom_nodes/comfyui_birefnet_ll/birefnet/models/birefnet.py", line 10, in <module>
+2025-06-07 10:08:04.611 |     from .backbones.build_backbone import build_backbone
+2025-06-07 10:08:04.611 |   File "/app/ComfyUI/custom_nodes/comfyui_birefnet_ll/birefnet/models/backbones/build_backbone.py", line 5, in <module>
+2025-06-07 10:08:04.611 |     from ..backbones.pvt_v2 import pvt_v2_b0, pvt_v2_b1, pvt_v2_b2, pvt_v2_b5
+2025-06-07 10:08:04.611 |   File "/app/ComfyUI/custom_nodes/comfyui_birefnet_ll/birefnet/models/backbones/pvt_v2.py", line 10, in <module>
+2025-06-07 10:08:04.611 |     from timm.models.layers import DropPath, to_2tuple, trunc_normal_
+2025-06-07 10:08:04.611 | ModuleNotFoundError: No module named 'timm'
+2025-06-07 10:08:04.611 | 
+2025-06-07 10:08:04.611 | Cannot import /app/ComfyUI/custom_nodes/comfyui_birefnet_ll module for custom nodes: No module named 'timm'
+2025-06-07 10:08:04.615 | Traceback (most recent call last):
+2025-06-07 10:08:04.615 |   File "/app/ComfyUI/nodes.py", line 2124, in load_custom_node
+2025-06-07 10:08:04.615 |     module_spec.loader.exec_module(module)
+2025-06-07 10:08:04.615 |   File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+2025-06-07 10:08:04.615 |   File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+2025-06-07 10:08:04.615 |   File "/app/ComfyUI/custom_nodes/comfyui-cogvideoxwrapper/__init__.py", line 1, in <module>
+2025-06-07 10:08:04.615 |     from .nodes import NODE_CLASS_MAPPINGS as NODES_CLASS, NODE_DISPLAY_NAME_MAPPINGS as NODES_DISPLAY
+2025-06-07 10:08:04.615 |   File "/app/ComfyUI/custom_nodes/comfyui-cogvideoxwrapper/nodes.py", line 8, in <module>
+2025-06-07 10:08:04.615 |     check_diffusers_version()
+2025-06-07 10:08:04.615 |   File "/app/ComfyUI/custom_nodes/comfyui-cogvideoxwrapper/utils.py", line 12, in check_diffusers_version
+2025-06-07 10:08:04.615 |     raise AssertionError(f"diffusers version {version} is installed, but version {required_version} or higher is required.")
+2025-06-07 10:08:04.615 | AssertionError: diffusers version 0.27.2 is installed, but version 0.31.0 or higher is required.
+2025-06-07 10:08:04.615 | 
+2025-06-07 10:08:04.615 | Cannot import /app/ComfyUI/custom_nodes/comfyui-cogvideoxwrapper module for custom nodes: diffusers version 0.27.2 is installed, but version 0.31.0 or higher is required.
+2025-06-07 10:08:04.624 | Traceback (most recent call last):
+2025-06-07 10:08:04.624 |   File "/app/ComfyUI/nodes.py", line 2124, in load_custom_node
+2025-06-07 10:08:04.624 |     module_spec.loader.exec_module(module)
+2025-06-07 10:08:04.624 |   File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+2025-06-07 10:08:04.624 |   File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+2025-06-07 10:08:04.624 |   File "/app/ComfyUI/custom_nodes/teacache/__init__.py", line 2, in <module>
+2025-06-07 10:08:04.624 |     from .nodes_diffusers import NODE_CLASS_MAPPINGS as DIFFUSERS_NODE_CLASS, NODE_DISPLAY_NAME_MAPPINGS as DIFFUSERS_NODES_DISPLAY
+2025-06-07 10:08:04.624 |   File "/app/ComfyUI/custom_nodes/teacache/nodes_diffusers.py", line 6, in <module>
+2025-06-07 10:08:04.624 |     from diffusers.models.modeling_outputs import Transformer2DModelOutput
+2025-06-07 10:08:04.624 |   File "/app/.venv/lib/python3.12/site-packages/diffusers/__init__.py", line 5, in <module>
+2025-06-07 10:08:04.624 |     from .utils import (
+2025-06-07 10:08:04.624 |   File "/app/.venv/lib/python3.12/site-packages/diffusers/utils/__init__.py", line 38, in <module>
+2025-06-07 10:08:04.624 |     from .dynamic_modules_utils import get_class_from_dynamic_module
+2025-06-07 10:08:04.624 |   File "/app/.venv/lib/python3.12/site-packages/diffusers/utils/dynamic_modules_utils.py", line 28, in <module>
+2025-06-07 10:08:04.624 |     from huggingface_hub import cached_download, hf_hub_download, model_info
+2025-06-07 10:08:04.624 | ImportError: cannot import name 'cached_download' from 'huggingface_hub' (/app/.venv/lib/python3.12/site-packages/huggingface_hub/__init__.py). Did you mean: 'hf_hub_download'?
+2025-06-07 10:08:04.624 | 
+2025-06-07 10:08:04.624 | Cannot import /app/ComfyUI/custom_nodes/teacache module for custom nodes: cannot import name 'cached_download' from 'huggingface_hub' (/app/.venv/lib/python3.12/site-packages/huggingface_hub/__init__.py)
+2025-06-07 10:08:04.631 | Traceback (most recent call last):
+2025-06-07 10:08:04.631 |   File "/app/ComfyUI/nodes.py", line 2124, in load_custom_node
+2025-06-07 10:08:04.631 |     module_spec.loader.exec_module(module)
+2025-06-07 10:08:04.631 |   File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+2025-06-07 10:08:04.631 |   File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+2025-06-07 10:08:04.631 |   File "/app/ComfyUI/custom_nodes/comfyui-dev-utils/__init__.py", line 4, in <module>
+2025-06-07 10:08:04.631 |     from .nodes.log_console import *
+2025-06-07 10:08:04.631 |   File "/app/ComfyUI/custom_nodes/comfyui-dev-utils/nodes/log_console.py", line 10, in <module>
+2025-06-07 10:08:04.631 |     from aiohttp_sse import sse_response, EventSourceResponse
+2025-06-07 10:08:04.631 | ModuleNotFoundError: No module named 'aiohttp_sse'
+2025-06-07 10:08:04.631 | 
+2025-06-07 10:08:04.631 | Cannot import /app/ComfyUI/custom_nodes/comfyui-dev-utils module for custom nodes: No module named 'aiohttp_sse'
+2025-06-07 10:08:04.635 | ### Loading: ComfyUI-Manager (V3.32.5)
+2025-06-07 10:08:04.635 | [ComfyUI-Manager] network_mode: public
+2025-06-07 10:08:04.686 | ### ComfyUI Revision: 3550 [866f6cda] *DETACHED | Released on '2025-06-04'
+2025-06-07 10:08:04.723 | Traceback (most recent call last):
+2025-06-07 10:08:04.723 |   File "/app/ComfyUI/nodes.py", line 2124, in load_custom_node
+2025-06-07 10:08:04.723 |     module_spec.loader.exec_module(module)
+2025-06-07 10:08:04.723 |   File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+2025-06-07 10:08:04.723 |   File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+2025-06-07 10:08:04.723 |   File "/app/ComfyUI/custom_nodes/ComfyUI-Crystools/__init__.py", line 10, in <module>
+2025-06-07 10:08:04.723 |     from .core import version, logger
+2025-06-07 10:08:04.723 |   File "/app/ComfyUI/custom_nodes/ComfyUI-Crystools/core/__init__.py", line 5, in <module>
+2025-06-07 10:08:04.723 |     from .common import *
+2025-06-07 10:08:04.723 |   File "/app/ComfyUI/custom_nodes/ComfyUI-Crystools/core/common.py", line 4, in <module>
+2025-06-07 10:08:04.723 |     from deepdiff import DeepDiff
+2025-06-07 10:08:04.723 | ModuleNotFoundError: No module named 'deepdiff'
+2025-06-07 10:08:04.723 | 
+2025-06-07 10:08:04.723 | Cannot import /app/ComfyUI/custom_nodes/ComfyUI-Crystools module for custom nodes: No module named 'deepdiff'
+2025-06-07 10:08:04.724 | [Impact Pack] Failed to import due to several dependencies are missing!!!!
+2025-06-07 10:08:04.724 | ### Loading: ComfyUI-Impact-Pack (V8.15.3)
+2025-06-07 10:08:04.725 | Traceback (most recent call last):
+2025-06-07 10:08:04.725 |   File "/app/ComfyUI/nodes.py", line 2124, in load_custom_node
+2025-06-07 10:08:04.725 |     module_spec.loader.exec_module(module)
+2025-06-07 10:08:04.725 |   File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+2025-06-07 10:08:04.725 |   File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+2025-06-07 10:08:04.725 |   File "/app/ComfyUI/custom_nodes/comfyui-impact-pack/__init__.py", line 46, in <module>
+2025-06-07 10:08:04.725 |     raise e
+2025-06-07 10:08:04.725 |   File "/app/ComfyUI/custom_nodes/comfyui-impact-pack/__init__.py", line 35, in <module>
+2025-06-07 10:08:04.725 |     from skimage.measure import label, regionprops
+2025-06-07 10:08:04.725 | ModuleNotFoundError: No module named 'skimage'
+2025-06-07 10:08:04.725 | 
+2025-06-07 10:08:04.725 | Cannot import /app/ComfyUI/custom_nodes/comfyui-impact-pack module for custom nodes: No module named 'skimage'
+2025-06-07 10:08:04.725 | 
+2025-06-07 10:08:04.725 | Import times for custom nodes:
+2025-06-07 10:08:04.725 |    0.0 seconds: /app/ComfyUI/custom_nodes/ComfyUI_pose_inter
+2025-06-07 10:08:04.725 |    0.0 seconds: /app/ComfyUI/custom_nodes/comfyui_sageattention.py
+2025-06-07 10:08:04.726 |    0.0 seconds: /app/ComfyUI/custom_nodes/websocket_image_save.py
+2025-06-07 10:08:04.726 |    0.0 seconds: /app/ComfyUI/custom_nodes/ComfyUI-ImageMotionGuider
+2025-06-07 10:08:04.726 |    0.0 seconds: /app/ComfyUI/custom_nodes/comfyui-image-selector
+2025-06-07 10:08:04.726 |    0.0 seconds: /app/ComfyUI/custom_nodes/ComfyUI-HunyuanVideoMultiLora
+2025-06-07 10:08:04.726 |    0.0 seconds: /app/ComfyUI/custom_nodes/ComfyUI-FreeMemory
+2025-06-07 10:08:04.726 |    0.0 seconds: /app/ComfyUI/custom_nodes/ComfyUI-WanStartEndFramesNative
+2025-06-07 10:08:04.726 |    0.0 seconds: /app/ComfyUI/custom_nodes/ReLight
+2025-06-07 10:08:04.727 |    0.0 seconds: /app/ComfyUI/custom_nodes/The-AI-Doctors-Clinical-Tools
+2025-06-07 10:08:04.727 |    0.0 seconds (IMPORT FAILED): /app/ComfyUI/custom_nodes/ComfyUI-nunchaku
+2025-06-07 10:08:04.727 |    0.0 seconds: /app/ComfyUI/custom_nodes/wavespeed
+2025-06-07 10:08:04.727 |    0.0 seconds (IMPORT FAILED): /app/ComfyUI/custom_nodes/comfyui-brushnet
+2025-06-07 10:08:04.727 |    0.0 seconds (IMPORT FAILED): /app/ComfyUI/custom_nodes/comfyui-dev-utils
+2025-06-07 10:08:04.727 |    0.0 seconds (IMPORT FAILED): /app/ComfyUI/custom_nodes/comfyui-sam2
+2025-06-07 10:08:04.728 |    0.0 seconds (IMPORT FAILED): /app/ComfyUI/custom_nodes/ComfyUI-FramePackWrapper
+2025-06-07 10:08:04.728 |    0.0 seconds (IMPORT FAILED): /app/ComfyUI/custom_nodes/comfyui_segment_anything
+2025-06-07 10:08:04.728 |    0.0 seconds (IMPORT FAILED): /app/ComfyUI/custom_nodes/comfyui-impact-pack
+2025-06-07 10:08:04.728 |    0.0 seconds (IMPORT FAILED): /app/ComfyUI/custom_nodes/comfyui-hunyan3dwrapper
+2025-06-07 10:08:04.728 |    0.0 seconds: /app/ComfyUI/custom_nodes/comfyui_memory_cleanup
+2025-06-07 10:08:04.728 |    0.0 seconds (IMPORT FAILED): /app/ComfyUI/custom_nodes/llm_polymath
+2025-06-07 10:08:04.728 |    0.0 seconds: /app/ComfyUI/custom_nodes/comfyui-inpaint-nodes
+2025-06-07 10:08:04.729 |    0.0 seconds (IMPORT FAILED): /app/ComfyUI/custom_nodes/ComfyUI-Crystools
+2025-06-07 10:08:04.729 |    0.0 seconds: /app/ComfyUI/custom_nodes/comfyui_ipadapter_plus
+2025-06-07 10:08:04.729 |    0.0 seconds: /app/ComfyUI/custom_nodes/comfyui_essentials
+2025-06-07 10:08:04.729 |    0.0 seconds (IMPORT FAILED): /app/ComfyUI/custom_nodes/comfyui-cogvideoxwrapper
+2025-06-07 10:08:04.729 |    0.0 seconds (IMPORT FAILED): /app/ComfyUI/custom_nodes/ComfyUI-WanVideoWrapper
+2025-06-07 10:08:04.729 |    0.0 seconds (IMPORT FAILED): /app/ComfyUI/custom_nodes/comfyui-impact-subpack
+2025-06-07 10:08:04.729 |    0.0 seconds (IMPORT FAILED): /app/ComfyUI/custom_nodes/comfyui-mvadapter
+2025-06-07 10:08:04.730 |    0.0 seconds: /app/ComfyUI/custom_nodes/comfyui-florence2
+2025-06-07 10:08:04.730 |    0.0 seconds: /app/ComfyUI/custom_nodes/comfyui-custom-scripts
+2025-06-07 10:08:04.730 |    0.0 seconds: /app/ComfyUI/custom_nodes/ComfyUI-segment-anything-2
+2025-06-07 10:08:04.730 |    0.0 seconds: /app/ComfyUI/custom_nodes/comfyui-rmbg
+2025-06-07 10:08:04.730 |    0.0 seconds (IMPORT FAILED): /app/ComfyUI/custom_nodes/comfyui_birefnet_ll
+2025-06-07 10:08:04.730 |    0.0 seconds (IMPORT FAILED): /app/ComfyUI/custom_nodes/teacache
+2025-06-07 10:08:04.730 |    0.0 seconds: /app/ComfyUI/custom_nodes/comfyui_ultimatesdupscale
+2025-06-07 10:08:04.731 |    0.0 seconds: /app/ComfyUI/custom_nodes/comfyui-frame-interpolation
+2025-06-07 10:08:04.731 |    0.0 seconds (IMPORT FAILED): /app/ComfyUI/custom_nodes/comfyui-hunyuanvideowrapper
+2025-06-07 10:08:04.731 |    0.0 seconds (IMPORT FAILED): /app/ComfyUI/custom_nodes/comfyui_tinyterranodes
+2025-06-07 10:08:04.731 |    0.0 seconds: /app/ComfyUI/custom_nodes/comfyui-ic-light
+2025-06-07 10:08:04.731 |    0.0 seconds (IMPORT FAILED): /app/ComfyUI/custom_nodes/ComfyUI-LTXVideo
+2025-06-07 10:08:04.731 |    0.0 seconds (IMPORT FAILED): /app/ComfyUI/custom_nodes/comfyui-kjnodes
+2025-06-07 10:08:04.731 |    0.0 seconds: /app/ComfyUI/custom_nodes/comfyui_controlnet_aux
+2025-06-07 10:08:04.731 |    0.0 seconds: /app/ComfyUI/custom_nodes/comfyui-videohelpersuite
+2025-06-07 10:08:04.732 |    0.1 seconds: /app/ComfyUI/custom_nodes/comfyui-manager
+2025-06-07 10:08:04.732 |    0.1 seconds: /app/ComfyUI/custom_nodes/ComfyUI_3dPoseEditor
+2025-06-07 10:08:04.732 |    0.1 seconds: /app/ComfyUI/custom_nodes/camera-comfyUI
+2025-06-07 10:08:04.732 |    0.1 seconds: /app/ComfyUI/custom_nodes/comfyui-tooling-nodes
+2025-06-07 10:08:04.732 |    0.2 seconds: /app/ComfyUI/custom_nodes/comfyui-advanced-controlnet
+2025-06-07 10:08:04.732 |    0.3 seconds: /app/ComfyUI/custom_nodes/rgthree-comfy
+2025-06-07 10:08:04.732 |    0.4 seconds: /app/ComfyUI/custom_nodes/comfyui-detail-daemon
+2025-06-07 10:08:04.733 |    3.2 seconds: /app/ComfyUI/custom_nodes/comfyui-easy-use
+2025-06-07 10:08:04.733 | 
+2025-06-07 10:08:04.733 | WARNING: some comfy_extras/ nodes did not import correctly. This may be because they are missing some dependencies.
+2025-06-07 10:08:04.733 | 
+2025-06-07 10:08:04.733 | IMPORT FAILED: nodes_audio.py
+2025-06-07 10:08:04.733 | 
+2025-06-07 10:08:04.733 | This issue might be caused by new missing dependencies added the last time you updated ComfyUI.
+2025-06-07 10:08:04.733 | Please do a: pip install -r requirements.txt
+2025-06-07 10:08:04.733 | 
+2025-06-07 10:08:04.753 | Starting server
+2025-06-07 10:08:04.753 | 
+2025-06-07 10:08:04.753 | To see the GUI go to: http://0.0.0.0:8188
+2025-06-07 10:08:04.990 | [ComfyUI-Manager] Failed to perform initial fetching 'alter-list.json': [Errno 13] Permission denied: '/app/ComfyUI/user/default/ComfyUI-Manager/cache/2259715867_alter-list.json'
+2025-06-07 10:08:04.995 | Traceback (most recent call last):
+2025-06-07 10:08:04.995 |   File "/app/ComfyUI/custom_nodes/comfyui-manager/glob/manager_server.py", line 1735, in get_cache
+2025-06-07 10:08:04.995 |     with open(cache_uri, "w", encoding='utf-8') as file:
+2025-06-07 10:08:04.995 |          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-06-07 10:08:04.995 | PermissionError: [Errno 13] Permission denied: '/app/ComfyUI/user/default/ComfyUI-Manager/cache/2259715867_alter-list.json'
+2025-06-07 10:08:05.010 | [ComfyUI-Manager] Failed to perform initial fetching 'extension-node-map.json': [Errno 13] Permission denied: '/app/ComfyUI/user/default/ComfyUI-Manager/cache/1742899825_extension-node-map.json'
+2025-06-07 10:08:05.010 | Traceback (most recent call last):
+2025-06-07 10:08:05.011 |   File "/app/ComfyUI/custom_nodes/comfyui-manager/glob/manager_server.py", line 1735, in get_cache
+2025-06-07 10:08:05.011 |     with open(cache_uri, "w", encoding='utf-8') as file:
+2025-06-07 10:08:05.011 |          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-06-07 10:08:05.011 | PermissionError: [Errno 13] Permission denied: '/app/ComfyUI/user/default/ComfyUI-Manager/cache/1742899825_extension-node-map.json'
+2025-06-07 10:08:05.072 | [ComfyUI-Manager] Failed to perform initial fetching 'github-stats.json': [Errno 13] Permission denied: '/app/ComfyUI/user/default/ComfyUI-Manager/cache/746607195_github-stats.json'
+2025-06-07 10:08:05.076 | Traceback (most recent call last):
+2025-06-07 10:08:05.076 |   File "/app/ComfyUI/custom_nodes/comfyui-manager/glob/manager_server.py", line 1735, in get_cache
+2025-06-07 10:08:05.076 |     with open(cache_uri, "w", encoding='utf-8') as file:
+2025-06-07 10:08:05.076 |          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-06-07 10:08:05.076 | PermissionError: [Errno 13] Permission denied: '/app/ComfyUI/user/default/ComfyUI-Manager/cache/746607195_github-stats.json'
+2025-06-07 10:08:05.146 | [ComfyUI-Manager] Failed to perform initial fetching 'custom-node-list.json': [Errno 13] Permission denied: '/app/ComfyUI/user/default/ComfyUI-Manager/cache/1514988643_custom-node-list.json'
+2025-06-07 10:08:05.146 | Traceback (most recent call last):
+2025-06-07 10:08:05.146 |   File "/app/ComfyUI/custom_nodes/comfyui-manager/glob/manager_server.py", line 1735, in get_cache
+2025-06-07 10:08:05.146 |     with open(cache_uri, "w", encoding='utf-8') as file:
+2025-06-07 10:08:05.146 |          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-06-07 10:08:05.146 | PermissionError: [Errno 13] Permission denied: '/app/ComfyUI/user/default/ComfyUI-Manager/cache/1514988643_custom-node-list.json'
+2025-06-07 10:08:05.323 | [ComfyUI-Manager] Failed to perform initial fetching 'model-list.json': [Errno 13] Permission denied: '/app/ComfyUI/user/default/ComfyUI-Manager/cache/4245046894_model-list.json'
+2025-06-07 10:08:05.323 | Traceback (most recent call last):
+2025-06-07 10:08:05.323 |   File "/app/ComfyUI/custom_nodes/comfyui-manager/glob/manager_server.py", line 1735, in get_cache
+2025-06-07 10:08:05.323 |     with open(cache_uri, "w", encoding='utf-8') as file:
+2025-06-07 10:08:05.324 |          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-06-07 10:08:05.324 | PermissionError: [Errno 13] Permission denied: '/app/ComfyUI/user/default/ComfyUI-Manager/cache/4245046894_model-list.json'
+2025-06-07 10:08:08.639 | FETCH ComfyRegistry Data: 5/88
+2025-06-07 10:08:12.547 | FETCH ComfyRegistry Data: 10/88
+2025-06-07 10:08:16.168 | FETCH ComfyRegistry Data: 15/88
+2025-06-07 10:08:19.848 | FETCH ComfyRegistry Data: 20/88
+2025-06-07 10:08:23.516 | FETCH ComfyRegistry Data: 25/88
+2025-06-07 10:08:27.142 | FETCH ComfyRegistry Data: 30/88
+2025-06-07 10:08:28.035 | FETCH ComfyRegistry Data: 35/88
+2025-06-07 10:08:31.645 | FETCH ComfyRegistry Data: 40/88
+2025-06-07 10:08:35.347 | FETCH ComfyRegistry Data: 45/88
+2025-06-07 10:08:39.096 | FETCH ComfyRegistry Data: 50/88
+2025-06-07 10:08:42.700 | FETCH ComfyRegistry Data: 55/88
+2025-06-07 10:08:46.375 | FETCH ComfyRegistry Data: 60/88
+2025-06-07 10:08:50.051 | FETCH ComfyRegistry Data: 65/88
+2025-06-07 10:08:53.915 | FETCH ComfyRegistry Data: 70/88
+2025-06-07 10:08:55.250 | FETCH ComfyRegistry Data: 75/88
+2025-06-07 10:08:58.981 | FETCH ComfyRegistry Data: 80/88
+2025-06-07 10:09:02.720 | FETCH ComfyRegistry Data: 85/88
+2025-06-07 10:09:05.385 | FETCH ComfyRegistry Data [DONE]
+2025-06-07 10:09:05.386 | Cannot connect to comfyregistry.
+2025-06-07 10:09:05.649 | FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json [DONE]
+2025-06-07 10:09:05.689 | [ComfyUI-Manager] Due to a network error, switching to local mode.
+2025-06-07 10:09:05.689 | => custom-node-list.json
+2025-06-07 10:09:05.689 | => [Errno 13] Permission denied: 
+2025-06-07 10:09:05.689 | '/app/ComfyUI/user/default/ComfyUI-Manager/cache/1514988643_custom-node-list.jso
+2025-06-07 10:09:05.689 | n'
+2025-06-07 10:09:05.702 | FETCH DATA from: /app/ComfyUI/custom_nodes/comfyui-manager/custom-node-list.json [DONE]
+2025-06-07 10:09:05.712 | [ComfyUI-Manager] All startup tasks have been completed.
+2025-06-07 22:42:00.003 | 
