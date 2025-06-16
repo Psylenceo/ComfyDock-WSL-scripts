@@ -1,0 +1,156 @@
+2025-06-07 10:08:05
+
+
+[ComfyUI-Manager] Failed to perform initial fetching 'custom-node-list.json': [Errno 13] Permission denied: '/app/ComfyUI/user/default/ComfyUI-Manager/cache/1514988643_custom-node-list.json'
+2025-06-07 10:08:05
+
+
+Traceback (most recent call last):
+2025-06-07 10:08:05
+
+
+  File "/app/ComfyUI/custom_nodes/comfyui-manager/glob/manager_server.py", line 1735, in get_cache
+2025-06-07 10:08:05
+
+
+    with open(cache_uri, "w", encoding='utf-8') as file:
+2025-06-07 10:08:05
+
+
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-06-07 10:08:05
+
+
+PermissionError: [Errno 13] Permission denied: '/app/ComfyUI/user/default/ComfyUI-Manager/cache/1514988643_custom-node-list.json'
+2025-06-07 10:08:05
+
+
+[ComfyUI-Manager] Failed to perform initial fetching 'model-list.json': [Errno 13] Permission denied: '/app/ComfyUI/user/default/ComfyUI-Manager/cache/4245046894_model-list.json'
+2025-06-07 10:08:05
+
+
+Traceback (most recent call last):
+2025-06-07 10:08:05
+
+
+  File "/app/ComfyUI/custom_nodes/comfyui-manager/glob/manager_server.py", line 1735, in get_cache
+2025-06-07 10:08:05
+
+
+    with open(cache_uri, "w", encoding='utf-8') as file:
+2025-06-07 10:08:05
+
+
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-06-07 10:08:05
+
+
+PermissionError: [Errno 13] Permission denied: '/app/ComfyUI/user/default/ComfyUI-Manager/cache/4245046894_model-list.json'
+2025-06-07 10:08:08
+
+
+FETCH ComfyRegistry Data: 5/88
+2025-06-07 10:08:12
+
+
+FETCH ComfyRegistry Data: 10/88
+2025-06-07 10:08:16
+
+
+FETCH ComfyRegistry Data: 15/88
+2025-06-07 10:08:19
+
+
+FETCH ComfyRegistry Data: 20/88
+2025-06-07 10:08:23
+
+
+FETCH ComfyRegistry Data: 25/88
+2025-06-07 10:08:27
+
+
+FETCH ComfyRegistry Data: 30/88
+2025-06-07 10:08:28
+
+
+FETCH ComfyRegistry Data: 35/88
+2025-06-07 10:08:31
+
+
+FETCH ComfyRegistry Data: 40/88
+2025-06-07 10:08:35
+
+
+FETCH ComfyRegistry Data: 45/88
+2025-06-07 10:08:39
+
+
+FETCH ComfyRegistry Data: 50/88
+2025-06-07 10:08:42
+
+
+FETCH ComfyRegistry Data: 55/88
+2025-06-07 10:08:46
+
+
+FETCH ComfyRegistry Data: 60/88
+2025-06-07 10:08:50
+
+
+FETCH ComfyRegistry Data: 65/88
+2025-06-07 10:08:53
+
+
+FETCH ComfyRegistry Data: 70/88
+2025-06-07 10:08:55
+
+
+FETCH ComfyRegistry Data: 75/88
+2025-06-07 10:08:58
+
+
+FETCH ComfyRegistry Data: 80/88
+2025-06-07 10:09:02
+
+
+FETCH ComfyRegistry Data: 85/88
+2025-06-07 10:09:05
+
+
+FETCH ComfyRegistry Data [DONE]
+2025-06-07 10:09:05
+
+
+Cannot connect to comfyregistry.
+2025-06-07 10:09:05
+
+
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json⁠ [DONE]
+2025-06-07 10:09:05
+
+
+[ComfyUI-Manager] Due to a network error, switching to local mode.
+2025-06-07 10:09:05
+
+
+=> custom-node-list.json
+2025-06-07 10:09:05
+
+
+=> [Errno 13] Permission denied: 
+2025-06-07 10:09:05
+
+
+'/app/ComfyUI/user/default/ComfyUI-Manager/cache/1514988643_custom-node-list.jso
+2025-06-07 10:09:05
+
+
+n'
+2025-06-07 10:09:05
+
+
+FETCH DATA from: /app/ComfyUI/custom_nodes/comfyui-manager/custom-node-list.json [DONE]
+2025-06-07 10:09:05
+
+
+[ComfyUI-Manager] All startup tasks have been completed.
